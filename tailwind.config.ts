@@ -10,20 +10,13 @@ export default {
   theme: {
   	extend: {
   		colors: {
-			dark:{
-				1: '#1c1f2e',
-				2: '#161925',
+			orange:{
+				1: '#BC6F39',
 			},
-			light:{
-				1: '#FFFFDF',
-				2: '#f5f5f5',
-				3: '#e7e0d3',
-			},
-			blue:{
-				1:'#0e78f9',
-			},
-			backgroundImage:{
-				hero:"url('/images/hero-background.png')",
+			grey:{
+				1:'#191919',
+				2: '#D3D3D3',
+				3: '#808080',
 			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
