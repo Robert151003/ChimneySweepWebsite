@@ -1,9 +1,15 @@
+'use client'
+
 import React from 'react';
 import { Button } from './ui/button';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation'
+import { cn } from '@/lib/utils';
+import { sidebarLinks } from '@/constants';
 
 
 const Navbar = () => {
+  const pathName = usePathname();
   return (
     <nav className="bg-orange-1 text-white p-4 relative">
       <div className="container mx-auto flex items-center justify-between">
@@ -23,7 +29,7 @@ const Navbar = () => {
         </div>
 
         {/* Navigation Section */}
-        <ul className="absolute left-1/2 transform -translate-x-1/2 flex space-x-8">
+        {/*<ul className="absolute left-1/2 transform -translate-x-1/2 flex space-x-8">
           <li>
             <Link href="/" className="hover:text-gray-300 font-bold">Home</Link>
           </li>
@@ -36,7 +42,24 @@ const Navbar = () => {
           <li>
             <Link href="/app/home/Contacts/page.tsx" className="hover:text-gray-300 font-bold">Contacts</Link>
           </li>
-        </ul>
+        </ul>*/}
+        {sidebarLinks.map((link) => {
+          const isActive = pathName === link.route || pathName.startsWith(`${link.route}/`);
+
+          return (
+            <Link 
+              href ={link.route}
+              key={link.label}
+              className={cn('flex gap-4 items-center p-4 rounded-lg justify-start', {
+                 'bg-orange-1': isActive,
+              })}
+            >
+              <p className='text-lg font-semibold max-lg:hidden'>
+                {link.label}
+              </p>
+            </Link>
+          );
+        })}
 
         {/* Button Section */}
         <a href="/Services" className="hover:text-gray-300 font-bold">
