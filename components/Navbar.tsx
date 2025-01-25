@@ -39,6 +39,7 @@ const Navbar = () => {
                 key={link.label}
                 className={cn('flex items-center px-2 rounded-lg justify-start', {
                   'text-grey-4': isActive,
+                  'hover:text-grey-2': true,
                 })}
               >
                 <p className='text-lg font-semibold max-lg:hidden'>
