@@ -6,9 +6,10 @@ import { Separator } from "@/components/ui/separator"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 {/*import { Terminal } from "lucide-react"*/}
 import { AlertCircle  } from "lucide-react"
-import QuickLinks from "@/components/QuickLinks";
-import HomeText from "@/components/HomeText";
-import PricingInformation from "@/components/PricingInformation";
+import HomeText from "@/components/HomePage/HomeText";
+import QuickLinks from "@/components/HomePage/QuickLinks";
+import PricingInformation from "@/components/HomePage/PricingInformation";
+
 
 
 

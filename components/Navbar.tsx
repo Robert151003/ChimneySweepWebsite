@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className="bg-orange-1 text-white p-4 relative">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo Section */}
-        <div className="flex items-center space-x-2">
+        <Link href="/" className="flex items-center space-x-2">
           <img 
             src="/Images/logo.png" 
             width={84} 
@@ -24,10 +24,9 @@ const Navbar = () => {
             alt="ESSweepsLogo" 
             className="max-sm:w-10 max-sm:h-10" 
           />
-          <Link href="/">
+          
             <h1 className="text-xl font-bold">Essex & Suffolk Sweeps</h1>
-          </Link>
-        </div>
+        </Link>
 
         {/* Navigation Section */}
         <div className="absolute left-1/2 transform -translate-x-1/2 flex space-x-8">
