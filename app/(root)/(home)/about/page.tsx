@@ -1,6 +1,4 @@
 import React from "react";
-import { Carousel } from "@mantine/carousel";
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
