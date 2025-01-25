@@ -11,12 +11,16 @@ export default {
   	extend: {
   		colors: {
 			orange:{
-				1: '#BC6F39',
+				1: '#BC6F39',				
 			},
 			grey:{
-				1:'#191919',
+				1: '#191919',
 				2: '#D3D3D3',
 				3: '#808080',
+				4: '#414141',
+			},
+			blue:{
+				1: '#0E78F9',
 			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

@@ -3,19 +3,20 @@
 import React from 'react';
 import { Button } from './ui/button';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation'
+import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { sidebarLinks } from '@/constants';
 
+const normalizePath = (path: string): string => path.replace(/\/$/, ''); // TypeScript: path is of type string
 
 const Navbar = () => {
   const pathName = usePathname();
+
   return (
     <nav className="bg-orange-1 text-white p-4 relative">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo Section */}
         <div className="flex items-center space-x-2">
-          
           <img 
             src="/Images/logo.png" 
             width={84} 
@@ -29,46 +30,38 @@ const Navbar = () => {
         </div>
 
         {/* Navigation Section */}
-        {/*<ul className="absolute left-1/2 transform -translate-x-1/2 flex space-x-8">
-          <li>
-            <Link href="/" className="hover:text-gray-300 font-bold">Home</Link>
-          </li>
-          <li>
-            <Link href="app/home/About/page.tsx" className="hover:text-gray-300 font-bold">About</Link>
-          </li>
-          <li>
-            <Link href="app/home/Services/page.tsx" className="hover:text-gray-300 font-bold">Services</Link>
-          </li>
-          <li>
-            <Link href="/app/home/Contacts/page.tsx" className="hover:text-gray-300 font-bold">Contacts</Link>
-          </li>
-        </ul>*/}
-        {sidebarLinks.map((link) => {
-          const isActive = pathName === link.route || pathName.startsWith(`${link.route}/`);
+        <div className="absolute left-1/2 transform -translate-x-1/2 flex space-x-8">
+          {sidebarLinks.map((link) => {
+            const isActive = normalizePath(pathName) === normalizePath(link.route);
 
-          return (
-            <Link 
-              href ={link.route}
-              key={link.label}
-              className={cn('flex items-center space-x-8 rounded-lg justify-start', {
-                 'bg-orange-1': isActive,
-              })}
-            >
-              <p className='text-lg font-semibold max-lg:hidden'>
-                {link.label}
-              </p>
-            </Link>
-          );
-        })}
+            return (
+              <Link 
+                href={link.route}
+                key={link.label}
+                className={cn('flex items-center px-2 rounded-lg justify-start', {
+                  'text-grey-4': isActive,
+                })}
+              >
+                <p className='text-lg font-semibold max-lg:hidden'>
+                  {link.label}
+                </p>
+              </Link>
+            );
+          })}
+        </div>    
 
         {/* Button Section */}
-        <a href="/Services" className="hover:text-gray-300 font-bold">
+        <Link href="/services" className="hover:text-gray-300 font-bold">
           <Button 
-            className="rounded-md bg-black px-6 py-3 text-lg font-bold"
+            className={cn("rounded-md bg-black px-6 py-3 text-lg font-bold", {
+              'text-white': true,
+              'hover:text-orange-1': true,
+              'hover:bg-white': true,
+            })}
           >
             Hire Us
           </Button>
-        </a>
+        </Link>
       </div>
     </nav>
   );

@@ -7,12 +7,13 @@ import {
 } from "@/components/ui/card"
 import Link from 'next/link';
 
+
 const QuickLinks = () => {
   return (
     <section id="about" className="my-8 max-w-4xl mx-auto px-4">
       <h2 className="text-2xl font-bold mb-8 text-center">Check Out Our Services</h2>
       <div className="container mx-auto flex flex-wrap justify-center gap-6">
-        <Link href='/Services'>
+        <Link href='/services'>
             <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
             <img 
                 src="/Icons/chimney.png" 
@@ -29,7 +30,7 @@ const QuickLinks = () => {
             </CardHeader>
             </Card>
         </Link>
-        <Link href='/Services'>
+        <Link href='/services'>
             <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
             <img 
                 src="/Icons/tools.png" 
@@ -46,7 +47,7 @@ const QuickLinks = () => {
             </CardHeader>
             </Card>
         </Link>
-        <Link href='/Services'>
+        <Link href='/services'>
             <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
             <img 
                 src="/Icons/woodburner.png" 
