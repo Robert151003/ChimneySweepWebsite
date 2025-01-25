@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from './ui/button';
+import Link from 'next/link';
 
 
 const Navbar = () => {
@@ -8,6 +9,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo Section */}
         <div className="flex items-center space-x-2">
+          
           <img 
             src="/Images/logo.png" 
             width={84} 
@@ -15,24 +17,24 @@ const Navbar = () => {
             alt="ESSweepsLogo" 
             className="max-sm:w-10 max-sm:h-10" 
           />
-          <a href="/">
+          <Link href="/">
             <h1 className="text-xl font-bold">Essex & Suffolk Sweeps</h1>
-          </a>
+          </Link>
         </div>
 
         {/* Navigation Section */}
         <ul className="absolute left-1/2 transform -translate-x-1/2 flex space-x-8">
           <li>
-            <a href="/" className="hover:text-gray-300 font-bold">Home</a>
+            <Link href="/" className="hover:text-gray-300 font-bold">Home</Link>
           </li>
           <li>
-            <a href="/About" className="hover:text-gray-300 font-bold">About</a>
+            <Link href="/About" className="hover:text-gray-300 font-bold">About</Link>
           </li>
           <li>
-            <a href="/Services" className="hover:text-gray-300 font-bold">Services</a>
+            <Link href="/Services" className="hover:text-gray-300 font-bold">Services</Link>
           </li>
           <li>
-            <a href="/Contacts" className="hover:text-gray-300 font-bold">Contacts</a>
+            <Link href="/Contacts" className="hover:text-gray-300 font-bold">Contacts</Link>
           </li>
         </ul>
 
