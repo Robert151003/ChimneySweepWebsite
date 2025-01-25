@@ -4,7 +4,8 @@ import Navbar from "@/components/Navbar";
 import Carousel from "@/components/Carousel";
 import { Separator } from "@/components/ui/separator"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-import { Terminal, AlertCircle  } from "lucide-react"
+{/*import { Terminal } from "lucide-react"*/}
+import { AlertCircle  } from "lucide-react"
 import QuickLinks from "@/components/QuickLinks";
 import HomeText from "@/components/HomeText";
 import PricingInformation from "@/components/PricingInformation";
