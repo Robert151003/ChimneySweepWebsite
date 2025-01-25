@@ -5,15 +5,15 @@ export const sidebarLinks=[
     },
     {
         label:'About',
-        route:'/About',
+        route:'/about',
     },
     {
         label:'Contacts',
-        route:'/Contacts',
+        route:'/contacts',
     },
     {
         label:'Services',
-        route:'/Services',
+        route:'/services',
     },
     
     
