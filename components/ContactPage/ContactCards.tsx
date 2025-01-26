@@ -6,6 +6,7 @@ import {
     CardTitle,
 } from "@/components/ui/card"
 import Link from 'next/link';
+import Image from 'next/image';
 
 const ContactCards = () => {
   return (
@@ -14,7 +15,7 @@ const ContactCards = () => {
 
             <Link href='tel:+447709568280'>
                 <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
-                <img 
+                <Image 
                     src="/Icons/mobile.png" 
                     width={64} 
                     height={64} 
@@ -32,7 +33,7 @@ const ContactCards = () => {
 
             <Link href="mailto:Robert.forsythe1234@gmail.com">
                 <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
-                <img 
+                <Image 
                     src="/Icons/email.png" 
                     width={64} 
                     height={64} 

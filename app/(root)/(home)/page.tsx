@@ -10,9 +10,6 @@ import HomeText from "@/components/HomePage/HomeText";
 import QuickLinks from "@/components/HomePage/QuickLinks";
 import PricingInformation from "@/components/HomePage/PricingInformation";
 
-
-
-
 const HomePage: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen">
@@ -27,7 +24,7 @@ const HomePage: React.FC = () => {
       <Alert variant="destructive" className="max-w-4xl flex-grow container mx-auto p-4 mt-4">
         {/*<Terminal className="h-4 w-4" />*/}
         <AlertCircle className="h-4 w-4" />
-        <AlertTitle>Importatnt Information!</AlertTitle>
+        <AlertTitle>Important Information!</AlertTitle>
         <AlertDescription>
           ESSweeps will be unavailable from the 13th January to the 13th February
         </AlertDescription>

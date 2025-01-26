@@ -6,6 +6,7 @@ import {
     CardTitle,
 } from "@/components/ui/card"
 import Link from 'next/link';
+import Image from 'next/image';
 
 const FuelTypes = () => {
     return (
@@ -15,7 +16,7 @@ const FuelTypes = () => {
 
             <Link href='https://bigkproducts.co.uk/post/smokeless-coal-facts-for-you/?srsltid=AfmBOorz9cm4T-ZUS7IzXEH9EUSYbOrCYuPjmAc7qdUFAafZkAEJaWng' target="_blank" rel="noopener noreferrer">
                 <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
-                <img 
+                <Image 
                     src="/Icons/coal.png" 
                     width={64} 
                     height={64} 
@@ -33,7 +34,7 @@ const FuelTypes = () => {
 
             <Link href='https://solidfuel.co.uk/wood-fuel-stoves-open-fires/#:~:text=It%20is%20important%20the%20logs,prevent%20the%20chimney%20functioning%20properly.' target="_blank" rel="noopener noreferrer">
                 <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
-                <img 
+                <Image 
                     src="/Icons/wood.png" 
                     width={64} 
                     height={64} 
@@ -51,7 +52,7 @@ const FuelTypes = () => {
 
             <Link href='https://pearsonfuels.co.uk/the-characteristics-of-bituminous-coal/'>
                 <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
-                <img 
+                <Image 
                     src="/Icons/coal.png" 
                     width={64} 
                     height={64} 
@@ -68,7 +69,7 @@ const FuelTypes = () => {
             </Link>
             <Link href='https://www.csia.org/blog/gas-oil-furnace-chimneys-what-you-need-to-know'>
                 <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
-                <img 
+                <Image 
                     src="/Icons/oil.png" 
                     width={64} 
                     height={64} 
@@ -86,7 +87,7 @@ const FuelTypes = () => {
 
             <Link href='https://www.csia.org/blog/gas-oil-furnace-chimneys-what-you-need-to-know'>
                 <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
-                <img 
+                <Image 
                     src="/Icons/gas.png" 
                     width={64} 
                     height={64} 

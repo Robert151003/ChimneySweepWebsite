@@ -6,6 +6,7 @@ import {
     CardTitle,
 } from "@/components/ui/card"
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 const QuickLinks = () => {
@@ -15,7 +16,7 @@ const QuickLinks = () => {
       <div className="container mx-auto flex flex-wrap justify-center gap-6">
         <Link href='/services'>
             <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
-            <img 
+            <Image 
                 src="/Icons/chimney.png" 
                 width={64} 
                 height={64} 
@@ -32,7 +33,7 @@ const QuickLinks = () => {
         </Link>
         <Link href='/services'>
             <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
-            <img 
+            <Image 
                 src="/Icons/tools.png" 
                 width={64} 
                 height={64} 
@@ -49,7 +50,7 @@ const QuickLinks = () => {
         </Link>
         <Link href='/services'>
             <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
-            <img 
+            <Image 
                 src="/Icons/woodburner.png" 
                 width={64} 
                 height={64} 

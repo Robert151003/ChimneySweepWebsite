@@ -1,43 +1,93 @@
-import {
-    Carousel as UiCarousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel";
+'use client'
+
+import Image from "next/image";
+import { useState } from "react";
 
 const CarouselWrapper = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const images = [
+    "/Images/CarouselImages/chimney 1.jpeg",
+    "/Images/CarouselImages/chimney 2.jpeg",
+    "/Images/CarouselImages/chimney 3.jpeg",
+    "/Images/CarouselImages/chimney 4.webp",
+    "/Images/CarouselImages/chimney 5.jpeg",
+    "/Images/CarouselImages/chimney 6.jpeg",
+  ];
+
+  const handlePrev = () => {
+    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
+
   return (
-    <div className="flex justify-center items-center my-8">
-      <UiCarousel className="w-full max-w-5xl rounded-xl">
-        <CarouselContent>
-          <CarouselItem>
-            <img 
-              src="/Images/CarouselImages\download (1).jpeg" 
-              alt="Image 1" 
-              className="w-full h-full object-cover rounded-xl"
-            />
-          </CarouselItem>
-          <CarouselItem>
-            <img 
-              src="/Images/CarouselImages\download.jpeg" 
-              alt="Image 2" 
-              className="w-full h-full object-cover rounded-xl"
-            />
-          </CarouselItem>
-          <CarouselItem>
-            <img 
-              src="/Images/CarouselImages\download (1).jpeg" 
-              alt="Image 3" 
-              className="w-full h-full object-cover rounded-xl"
-            />
-          </CarouselItem>
-        </CarouselContent>
-        <CarouselPrevious className="absolute left-0 top-1/2 transform -translate-y-1/2 text-white" />
-        <CarouselNext className="absolute right-0 top-1/2 transform -translate-y-1/2 text-white" />
-      </UiCarousel>
-    </div>
+    <section className="flex justify-center items-center my-8">
+      <div className="relative w-full max-w-8xl h-[500px] perspective-1000 overflow-hidden">
+        <div className="relative w-full h-full flex items-center justify-center">
+          {images.map((image, index) => {
+            const isActive = index === currentIndex;
+            const isPrevious =
+              index === (currentIndex - 1 + images.length) % images.length;
+            const isNext =
+              index === (currentIndex + 1) % images.length;
+
+            let transform = "translateX(100%) scale(0.8) translateZ(-200px)";
+            let zIndex = "1";
+            let opacity = "0.5";
+
+            if (isActive) {
+              transform = "translateX(0) scale(1) translateZ(0)";
+              zIndex = "10";
+              opacity = "1";
+            } else if (isPrevious) {
+              transform = "translateX(-100%) scale(0.8) translateZ(-200px)";
+              zIndex = "5";
+              opacity = "0.8";
+            } else if (isNext) {
+              transform = "translateX(100%) scale(0.8) translateZ(-200px)";
+              zIndex = "5";
+              opacity = "0.8";
+            }
+
+            return (
+              <div
+                key={index}
+                className={`absolute w-[60%] h-full transition-transform duration-700 ease-in-out`}
+                style={{
+                  transform,
+                  zIndex,
+                  opacity,
+                  transformStyle: "preserve-3d",
+                }}
+              >
+                <Image
+                  src={image}
+                  alt={`Carousel Image ${index + 1}`}
+                  className="w-full h-full object-cover rounded-xl shadow-lg"
+                  width={500}
+                  height={500}
+                />
+              </div>
+            );
+          })}
+        </div>
+        <button
+          onClick={handlePrev}
+          className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-black/50 text-white p-2 rounded-full"
+        >
+          ❮
+        </button>
+        <button
+          onClick={handleNext}
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-black/50 text-white p-2 rounded-full"
+        >
+          ❯
+        </button>
+      </div>
+    </section>
   );
-}
+};
 
 export default CarouselWrapper;
