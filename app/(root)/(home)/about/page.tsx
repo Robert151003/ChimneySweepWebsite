@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Separator } from "@/components/ui/separator";
 import FuelTypes from "@/components/AboutPage/FuelTypes";
-import Hero from "@/components/hero";
+import Hero from "@/components/Hero";
 
 const AboutPage: React.FC = () => {
   return (

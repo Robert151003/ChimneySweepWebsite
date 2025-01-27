@@ -10,7 +10,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import Hero from "@/components/hero";
+import Hero from "@/components/Hero";
 
 
 const AboutPage: React.FC = () => {
