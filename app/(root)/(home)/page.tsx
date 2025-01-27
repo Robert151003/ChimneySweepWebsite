@@ -9,6 +9,8 @@ import { AlertCircle  } from "lucide-react"
 import HomeText from "@/components/HomePage/HomeText";
 import QuickLinks from "@/components/HomePage/QuickLinks";
 import PricingInformation from "@/components/HomePage/PricingInformation";
+import Hero from "@/components/Hero";
+import LowerHero from "@/components/LowerHero";
 
 const HomePage: React.FC = () => {
   return (
@@ -17,9 +19,7 @@ const HomePage: React.FC = () => {
       <Navbar />
 
       {/* Hero Section with Slideshow */}
-      <section id="home" className="bg-gray-100">
-        {/* Optional Hero Content */}
-      </section>
+      <Hero />
 
       <Alert variant="destructive" className="max-w-4xl flex-grow container mx-auto p-4 mt-4">
         {/*<Terminal className="h-4 w-4" />*/}
@@ -47,8 +47,12 @@ const HomePage: React.FC = () => {
         <Separator />
 
         <PricingInformation />
+
+        <Separator />
         
       </main>
+
+      <LowerHero />
 
       {/* Footer */}
       <Footer />

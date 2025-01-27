@@ -10,6 +10,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import Hero from "@/components/hero";
 
 
 const AboutPage: React.FC = () => {
@@ -18,10 +19,8 @@ const AboutPage: React.FC = () => {
       {/* Navbar */}
       <Navbar />
 
-      {/* Hero Section with Slideshow */}
-      <section id="home" className="bg-gray-100">
-        
-      </section>
+      {/* Hero Section */}
+      <Hero />
 
       {/* Main Content */}
       <main className="flex-grow container mx-auto p-4">

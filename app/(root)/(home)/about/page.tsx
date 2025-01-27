@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Separator } from "@/components/ui/separator";
 import FuelTypes from "@/components/AboutPage/FuelTypes";
+import Hero from "@/components/hero";
 
 const AboutPage: React.FC = () => {
   return (
@@ -10,10 +11,8 @@ const AboutPage: React.FC = () => {
       {/* Navbar */}
       <Navbar />
 
-      {/* Hero Section with Slideshow */}
-      <section id="home" className="bg-gray-100">
-        
-      </section>
+      {/* Hero Section */}
+      <Hero />
 
       {/* Main Content */}
       <main className="flex-grow container mx-auto p-4">

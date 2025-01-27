@@ -15,7 +15,7 @@ const Navbar = () => {
     const pathName = usePathname();
 
     return (
-        <nav className='flex items-center justify-center relative z-50 w-full bg-orange-1 px-6 py-4 lg:px-10 lightMode:bg-dark-1'>
+        <nav className='flex items-center justify-center relative z-50 w-full bg-orange-1 px-6 py-4 lg:px-10'>
             
             {/* Mobile Navigation (aligned to the left on all screen sizes) */}
             <div className="absolute left-0 top-0 lg:hidden p-4">
@@ -30,7 +30,7 @@ const Navbar = () => {
             </Link>
 
             {/* Navigation Links (centered) */}
-            <div className="flex-grow hidden lg:flex justify-center items-center space-x-8">
+            <div className="flex-grow hidden lg:flex md:flex justify-center items-center space-x-8">
                 {sidebarLinks.map((link) => {
                     const isActive = normalizePath(pathName) === normalizePath(link.route);
 

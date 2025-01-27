@@ -6,6 +6,33 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.card {
+  perspective: 1000px;
+}
+
+.card-inner {
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  backface-visibility: hidden; /* Prevent showing the back when flipped */
+  position: absolute; /* Ensures the front and back are stacked */
+}
+
+.front {
+  /* Styles for front face */
+}
+
+.back {
+  /* Styles for back face */
+  transform: rotateY(180deg); /* Rotate the back face to the back initially */
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
