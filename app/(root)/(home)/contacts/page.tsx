@@ -3,7 +3,6 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Separator } from "@/components/ui/separator";
 import ContactCards from "@/components/ContactPage/ContactCards";
-import Hero from "@/components/Hero";
 
 const ContactsPage: React.FC = () => {
   return (
@@ -12,7 +11,6 @@ const ContactsPage: React.FC = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <Hero />
 
       {/* Main Content */}
       <main className="flex-grow container mx-auto p-4">

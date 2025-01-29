@@ -10,7 +10,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import Hero from "@/components/Hero";
 
 
 const AboutPage: React.FC = () => {
@@ -20,7 +19,6 @@ const AboutPage: React.FC = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <Hero />
 
       {/* Main Content */}
       <main className="flex-grow container mx-auto p-4">
