@@ -13,7 +13,7 @@ const ContactCards = () => {
     <section id="about" className="my-8 max-w-4xl mx-auto px-4">
           <div className="container mx-auto flex flex-wrap justify-center gap-6">
 
-            <Link href='tel:+447709568280'>
+            <Link href='tel:+447545976100'>
                 <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
                 <Image 
                     src="/Icons/mobile.png" 
@@ -25,13 +25,13 @@ const ContactCards = () => {
                 <CardHeader className="space-y-2">
                     <CardTitle className="text-lg font-semibold">Mobile</CardTitle>
                     <CardDescription className="text-sm text-gray-600">
-                    +44 7709 569 290
+                    +44 7545 976 100
                     </CardDescription>
                 </CardHeader>
                 </Card>
             </Link>
 
-            <Link href="mailto:Robert.forsythe1234@gmail.com">
+            <Link href="mailto:david.odonnell0101@gmail.com">
                 <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
                 <Image 
                     src="/Icons/email.png" 
@@ -43,7 +43,7 @@ const ContactCards = () => {
                 <CardHeader className="space-y-2">
                     <CardTitle className="text-lg font-semibold">E-mail</CardTitle>
                     <CardDescription className="text-sm text-gray-600">
-                    Robert.forsythe1234@gmail.com
+                    David.odonnell0101@gmail.com
                     </CardDescription>
                 </CardHeader>
                 </Card>

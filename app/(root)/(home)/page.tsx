@@ -17,16 +17,17 @@ const HomePage: React.FC = () => {
       {/* Navbar */}
       <Navbar />
 
-      {/* Hero Section with Slideshow */}
 
+      {/*
       <Alert variant="destructive" className="max-w-4xl flex-grow container mx-auto p-4 mt-4">
-        {/*<Terminal className="h-4 w-4" />*/}
+        {//<Terminal className="h-4 w-4" />}
         <AlertCircle className="h-4 w-4" />
         <AlertTitle>Important Information!</AlertTitle>
         <AlertDescription>
           ESSweeps will be unavailable from the 13th January to the 13th February
         </AlertDescription>
-      </Alert>
+      </Alert>*/}
+      
 
 
       {/* Main Content */}

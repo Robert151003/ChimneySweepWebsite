@@ -6,12 +6,18 @@ import { useState } from "react";
 const CarouselWrapper = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
-    "/Images/CarouselImages/chimney 1.jpeg",
-    "/Images/CarouselImages/chimney 2.jpeg",
-    "/Images/CarouselImages/chimney 3.jpeg",
-    "/Images/CarouselImages/chimney 4.webp",
-    "/Images/CarouselImages/chimney 5.jpeg",
-    "/Images/CarouselImages/chimney 6.jpeg",
+    "/Images/CarouselImages/image1.jpg",
+    "/Images/CarouselImages/image2.jpg",
+    "/Images/CarouselImages/image3.jpg",
+    "/Images/CarouselImages/image4.jpg",
+    "/Images/CarouselImages/image5.jpg",
+    "/Images/CarouselImages/image6.jpg",
+    "/Images/CarouselImages/image7.jpg",
+    "/Images/CarouselImages/image8.jpg",
+    "/Images/CarouselImages/image9.jpg",
+    "/Images/CarouselImages/image10.jpg",
+    "/Images/CarouselImages/image11.jpg",
+    "/Images/CarouselImages/image12.jpg",
   ];
 
   const handlePrev = () => {
@@ -28,10 +34,8 @@ const CarouselWrapper = () => {
         <div className="relative w-full h-full flex items-center justify-center">
           {images.map((image, index) => {
             const isActive = index === currentIndex;
-            const isPrevious =
-              index === (currentIndex - 1 + images.length) % images.length;
-            const isNext =
-              index === (currentIndex + 1) % images.length;
+            const isPrevious = index === (currentIndex - 1 + images.length) % images.length;
+            const isNext = index === (currentIndex + 1) % images.length;
 
             let transform = "translateX(100%) scale(0.8) translateZ(-200px)";
             let zIndex = "1";
@@ -65,7 +69,7 @@ const CarouselWrapper = () => {
                 <Image
                   src={image}
                   alt={`Carousel Image ${index + 1}`}
-                  className="w-full h-full object-cover rounded-xl shadow-lg"
+                  className="w-full h-full object-contain rounded-xl shadow-lg bg-white"
                   width={500}
                   height={500}
                 />

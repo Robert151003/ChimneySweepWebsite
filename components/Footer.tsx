@@ -21,12 +21,12 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-bold">Contact Us:</h3>
           <p className="text-grey-2 text-sm">
-            <Link href="tel:+447709568280" className="hover:underline">
-              07709568280
+            <Link href="tel:+447545976100" className="hover:underline">
+              07545976100
             </Link>
             <br />
-            <Link href="mailto:Robert.forsythe1234@gmail.com" className="hover:underline">
-              robert.forsythe@gmail.com
+            <Link href="mailto:david.odonnell0101@gmail.com" className="hover:underline">
+              David.odonnell0101@gmail.com
             </Link>
           </p>
         </div>
@@ -34,23 +34,23 @@ const Footer = () => {
         {/* Social Media Icons */}
         <div className="flex justify-center md:justify-end space-x-6">
           <Link
-            href="https://facebook.com"
+            href="https://www.facebook.com/EsSweeps"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-300"
           >
             <FaFacebook size={24} />
           </Link>
-          <Link
+          {/*<Link
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-300"
           >
             <FaTwitter size={24} />
-          </Link>
+          </Link>*/}
           <Link
-            href="https://instagram.com"
+            href="https://www.instagram.com/info.essweeps?igsh=eGtpbTliZzR5aWF4"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-300"
