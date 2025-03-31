@@ -41,14 +41,14 @@ const Footer = () => {
           >
             <FaFacebook size={24} />
           </Link>
-          {/*<Link
+          <Link
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-gray-300"
+            className="hover:text-gray-300 hidden"
           >
             <FaTwitter size={24} />
-          </Link>*/}
+          </Link>
           <Link
             href="https://www.instagram.com/info.essweeps?igsh=eGtpbTliZzR5aWF4"
             target="_blank"
