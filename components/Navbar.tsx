@@ -24,7 +24,7 @@ const Navbar = () => {
 
             <Link 
               href="/"
-              className="flex items-center gap-2 flex-none">
+              className="flex items-center gap-2 flex-none  ">
               <Image src="/Icons/logo.png" width={84} height={84} alt="logo" />
               <p className='text-[16px] font-extrabold text-white lg:text-[20px]'>Essex & Suffolk Sweeps</p>
             </Link>

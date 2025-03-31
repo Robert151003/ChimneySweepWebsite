@@ -18,28 +18,26 @@ const MobileNav = () => {
   const pathName = usePathname();
 
   return (
-    <section className="flex w-full px-4 py-2 bg-orange-1">
+    <section className="flex items-center py-4">
       {/* Burger icon */}
       <Sheet>
         <SheetTrigger>
-          <div className="ml-4">
-            <Image
-              src="/Icons/burger.png"
-              width={36}
-              height={36}
-              alt="hamburger icon"
-              className={cn('cursor-pointer md:hidden', {
-                'filter invert': true,
-              })}
-            />
-          </div>
+          <Image
+            src="/Icons/burger.png"
+            width={30} // Reduced size for better spacing
+            height={30}
+            alt="hamburger icon"
+            className={cn('cursor-pointer md:hidden', {
+              'filter invert': true,
+            })}
+          />
         </SheetTrigger>
         <SheetContent
           side="left"
-          className="border-none bg-orange-1 w-1/2"
+          className="border-none bg-orange-1 w-3/4 sm:w-1/2"
         >
           <SheetTitle className="hidden"></SheetTitle>
-          <div className="flex h-[calc(100vh - 72px)] flex-col justify-between overflow-y-auto">
+          <div className="flex h-[calc(100vh-72px)] flex-col justify-between overflow-y-auto">
             <SheetClose asChild>
               <section className="flex h-full flex-col gap-6 pt-16 text-white">
                 {sidebarLinks.map((link) => {
@@ -55,7 +53,8 @@ const MobileNav = () => {
                           {
                             'text-grey-3': isActive,
                           }
-                        )}>
+                        )}
+                      >
                         <p className="font-semibold text-xl">{link.label}</p>
                       </Link>
                     </SheetClose>
