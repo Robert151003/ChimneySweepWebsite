@@ -31,6 +31,25 @@ const ContactCards = () => {
                 </Card>
             </Link>
 
+            <Link href="https://wa.me/447545976100" passHref>
+                <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
+                    <Image 
+                    src="/Icons/whatsapp.png" 
+                    width={64} 
+                    height={64} 
+                    alt="WhatsApp" 
+                    className="mb-4"
+                    />
+                    <CardHeader className="space-y-2">
+                    <CardTitle className="text-lg font-semibold">WhatsApp</CardTitle>
+                    <CardDescription className="text-sm text-gray-600">
+                        +44 7545 976 100
+                    </CardDescription>
+                    </CardHeader>
+                </Card>
+                </Link>
+
+
             <Link href="mailto:david.odonnell0101@gmail.com">
                 <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
                 <Image 
@@ -43,7 +62,7 @@ const ContactCards = () => {
                 <CardHeader className="space-y-2">
                     <CardTitle className="text-lg font-semibold">E-mail</CardTitle>
                     <CardDescription className="text-sm text-gray-600">
-                    David.odonnell0101@gmail.com
+                    info.essweeps@gmail.com
                     </CardDescription>
                 </CardHeader>
                 </Card>

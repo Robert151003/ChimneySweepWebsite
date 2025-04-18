@@ -2,23 +2,10 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { CarouselImages as images} from '@/constants';
 
 const CarouselWrapper = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = [
-    "/Images/CarouselImages/image1.jpg",
-    "/Images/CarouselImages/image2.jpg",
-    "/Images/CarouselImages/image3.jpg",
-    "/Images/CarouselImages/image4.jpg",
-    "/Images/CarouselImages/image5.jpg",
-    "/Images/CarouselImages/image6.jpg",
-    "/Images/CarouselImages/image7.jpg",
-    "/Images/CarouselImages/image8.jpg",
-    "/Images/CarouselImages/image9.jpg",
-    "/Images/CarouselImages/image10.jpg",
-    "/Images/CarouselImages/image11.jpg",
-    "/Images/CarouselImages/image12.jpg",
-  ];
 
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));

@@ -11,7 +11,7 @@ const HomeText = () => {
         that, but clogged and dirty chimneys are liable to catch fire. Over time 
         creosote—a highly flammable substance—builds up in your chimney. A 
         chimney fire can spread to your roof and home, so it is best to avoid. 
-        You should aim to have your chimney swept and inspected once a year,  
+        You should aim to have your chimney swept and inspected at least once a year,  
         usually in spring or summer. Give us a call today to arrange a fast, 
         friendly, and efficient chimney sweep or service!
       </p>

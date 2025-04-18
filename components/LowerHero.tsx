@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const LowerHero = () => {
@@ -31,6 +32,30 @@ const LowerHero = () => {
           width={150}
           height={150}
         />
+        <Link href='https://burnright.co.uk/' target='_blank'>
+          <Image
+            src="/Images/burinright-logo.svg"
+            alt="Sweep Image"
+            objectFit="cover"
+            objectPosition="center"
+            quality={100}
+            priority={true}
+            className="z-0 rounded-lg"
+            width={150}
+            height={150}
+          />
+        </Link>
+        <Image
+            src="/Images/readytoburn.png"
+            alt="Sweep Image"
+            objectFit="cover"
+            objectPosition="center"
+            quality={100}
+            priority={true}
+            className="z-0 rounded-lg"
+            width={150}
+            height={150}
+          />
       </div>
     </section>
   );

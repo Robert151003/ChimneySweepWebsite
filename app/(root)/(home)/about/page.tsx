@@ -35,6 +35,45 @@ const AboutPage: React.FC = () => {
               having your chimneys and flues swept regularly by a qualified chimney sweep.
             </p>
             <Separator />
+            <h2 className="text-2xl font-bold text-black m-4 text-center">Areas Covered</h2>
+            <div className="m-4">
+              <div className="flex justify-center">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <ul className="text-left list-disc pl-5">
+                    <li>Grays</li>
+                    <li>Stanford</li>
+                    <li>Tilbury</li>
+                    <li>Orsett</li>
+                    <li>Ockendon</li>
+                    <li>Basildon</li>
+                    <li>Benfleet</li>
+                    <li>Canvey Island</li>
+                    <li>Romford</li>
+                    <li>Gidea Park</li>
+                    <li>Collier Row</li>
+                    <li>Upminster</li>
+                    <li>Hornchurch</li>
+                  </ul>
+
+                  <ul className="text-left list-disc pl-5">
+                    <li>Chelmsford</li>
+                    <li>Maldon</li>
+                    <li>Tiptree</li>
+                    <li>Marks Tey</li>
+                    <li>Witham</li>
+                    <li>Colchester</li>
+                    <li>Tillingham</li>
+                    <li>Southminster</li>
+                    <li>West Mersea</li>
+                    <li>Southend</li>
+                    <li>Clacton</li>
+                    <li>Harwich</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <Separator />
             <p className="m-4">
               Chimneys should be swept regularly to remove the build-up of soot, creosote and other debris 
               which are deposited from the fuel you are burning on your stove or in your fires. It is this 

@@ -14,7 +14,7 @@ const QuickLinks = () => {
     <section id="about" className="my-8 max-w-4xl mx-auto px-4">
       <h2 className="text-2xl font-bold mb-8 text-center">Check Out Our Services</h2>
       <div className="container mx-auto flex flex-wrap justify-center gap-6">
-        <Link href='/services'>
+        <Link href='/services#ChimneySweepServices'>
             <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
             <Image 
                 src="/Icons/chimney.png" 
@@ -31,7 +31,7 @@ const QuickLinks = () => {
             </CardHeader>
             </Card>
         </Link>
-        <Link href='/services'>
+        <Link href='/services#ChimneyServingandRepairs'>
             <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
             <Image 
                 src="/Icons/tools.png" 
@@ -48,10 +48,10 @@ const QuickLinks = () => {
             </CardHeader>
             </Card>
         </Link>
-        <Link href='/services'>
+        <Link href='/services#WoodBurnerServicing&Repairs'>
             <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
             <Image 
-                src="/Icons/woodburner.png" 
+                src="/Icons/stove.png" 
                 width={64} 
                 height={64} 
                 alt="WoodBurner" 
@@ -59,6 +59,74 @@ const QuickLinks = () => {
             />
             <CardHeader className="space-y-2">
                 <CardTitle className="text-lg font-semibold">Wood Burner Servicing & Repairs</CardTitle>
+                <CardDescription className="text-sm text-gray-600">
+                Look after your wood burner to guarantee it remains safe and efficient.
+                </CardDescription>
+            </CardHeader>
+            </Card>
+        </Link>
+        <Link href='/services#WeddingSweeps'>
+            <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
+            <Image 
+                src="/Icons/wedding-rings.png" 
+                width={64} 
+                height={64} 
+                alt="WoodBurner" 
+                className="mb-4"
+            />
+            <CardHeader className="space-y-2">
+                <CardTitle className="text-lg font-semibold">Wedding Sweeps</CardTitle>
+                <CardDescription className="text-sm text-gray-600">
+                Look after your wood burner to guarantee it remains safe and efficient.
+                </CardDescription>
+            </CardHeader>
+            </Card>
+        </Link>
+        <Link href='/services#BirdsNestRemoving'>
+            <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
+            <Image 
+                src="/Icons/pigeon.png" 
+                width={64} 
+                height={64} 
+                alt="WoodBurner" 
+                className="mb-4"
+            />
+            <CardHeader className="space-y-2">
+                <CardTitle className="text-lg font-semibold">Birds Nest Removing</CardTitle>
+                <CardDescription className="text-sm text-gray-600">
+                Look after your wood burner to guarantee it remains safe and efficient.
+                </CardDescription>
+            </CardHeader>
+            </Card>
+        </Link>
+        <Link href='/services#CowlFittings'>
+            <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
+            <Image 
+                src="/Icons/cowl.png" 
+                width={64} 
+                height={64} 
+                alt="WoodBurner" 
+                className="mb-4"
+            />
+            <CardHeader className="space-y-2">
+                <CardTitle className="text-lg font-semibold">Cowl Fittings</CardTitle>
+                <CardDescription className="text-sm text-gray-600">
+                Look after your wood burner to guarantee it remains safe and efficient.
+                </CardDescription>
+            </CardHeader>
+            </Card>
+        </Link>
+        <Link href='/services#DisusedChimneyCaps'>
+            <Card className="flex flex-col items-center justify-center h-72 w-64 text-center p-4">
+            <Image 
+                src="/Icons/chimney-sweep.png" 
+                width={64} 
+                height={64} 
+                alt="WoodBurner" 
+                className="mb-4"
+            />
+            <CardHeader className="space-y-2">
+                <CardTitle className="text-lg font-semibold">Disused Chimney Caps</CardTitle>
                 <CardDescription className="text-sm text-gray-600">
                 Look after your wood burner to guarantee it remains safe and efficient.
                 </CardDescription>

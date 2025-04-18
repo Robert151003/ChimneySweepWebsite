@@ -25,8 +25,8 @@ const Footer = () => {
               07545976100
             </Link>
             <br />
-            <Link href="mailto:david.odonnell0101@gmail.com" className="hover:underline">
-              David.odonnell0101@gmail.com
+            <Link href="mailto:info.essweeps@gmail.com" className="hover:underline">
+              info.essweeps@gmail.com
             </Link>
           </p>
         </div>
